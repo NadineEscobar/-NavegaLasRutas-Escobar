@@ -1,0 +1,67 @@
+:root {
+  --light-cyan: #E0FBFC;
+  --light-blue: #C2DFE3;
+  --cadet-gray: #9DB4C0;
+  --paynes-gray: #5C6B73;
+  --gunmetal: #253237;
+}
+
+body {
+  background-color: var(--light-cyan);
+  color: var(--gunmetal);
+}
+
+.navbar-custom {
+  background-color: var(--paynes-gray);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--light-cyan);
+}
+
+
+.btn-custom {
+  background-color: var(--cadet-gray);
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: var(--light-blue);
+  color: var(--gunmetal);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  margin-top: 5rem;
+}
