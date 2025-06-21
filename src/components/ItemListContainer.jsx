@@ -7,12 +7,12 @@ const ItemListContainer = ({ greeting }) => {
     <div className="container main-content">
       <h2 className="text-center mb-4">{greeting}</h2>
       <div className="row justify-content-center gap-3">
-        {products.map(({ id, title, image, downloadLink }) => (
+        {products.map(({ id, title, image, price }) => (
           <div key={id} className="col-md-3">
             <ProductCard
               title={title}
               image={image}
-              downloadLink={downloadLink}
+              price={price}
             />
           </div>
         ))}

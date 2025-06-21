@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ title, image, downloadLink }) => {
+const ProductCard = ({ title, image, price }) => {
   return (
     <div className="card shadow-sm">
       <img
@@ -10,14 +10,10 @@ const ProductCard = ({ title, image, downloadLink }) => {
       />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
-        <a
-          href={downloadLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-custom mt-3"
-        >
-          Descargar plantilla
-        </a>
+        <p className="card-text fw-bold">${price}</p>
+        <button className="btn btn-custom mt-3">
+          Agregar al carrito
+        </button>
       </div>
     </div>
   );
