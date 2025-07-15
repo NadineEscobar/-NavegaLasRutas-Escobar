@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nadineescobar.github.io/-CreaTuLanding-Escobar/",
+  "homepage": "https://github.com/NadineEscobar/-NavegaLasRutas-Escobar",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
