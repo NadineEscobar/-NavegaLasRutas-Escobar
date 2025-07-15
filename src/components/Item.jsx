@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({ title, image, price, id }) => {
+const Item = ({ id, title, image, price }) => {
   return (
     <div className="card shadow-sm">
-      <img src={image} className="card-img-top" alt={title} />
+      <img src={image} alt={title} className="card-img-top" />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text fw-bold">${price}</p>
-        <Link to={`/item/${id}`} className="btn mt-3" style={{ backgroundColor: 'var(--paynes-gray)', color: 'white' }}>
+        <Link to={`/item/${id}`} className="btn " style={{ backgroundColor: 'var(--paynes-gray)', color: 'white' }}>
           Ver detalle
         </Link>
       </div>
@@ -16,4 +16,4 @@ const ProductCard = ({ title, image, price, id }) => {
   );
 };
 
-export default ProductCard;
+export default Item;
